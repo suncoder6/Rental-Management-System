@@ -93,19 +93,14 @@
 			<artifactId>fastjson</artifactId>
 			<version>${fastjson.version}</version>
 		</dependency>
+
 		<dependency>
-		    <groupId>com.microsoft.sqlserver</groupId>
-		    <artifactId>sqljdbc4</artifactId>
-		    <scope>4.0</scope>
-		    <version>4.0</version>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>mssql-jdbc</artifactId>
+			<version>6.4.0.jre8</version>
 		</dependency>
 		
-		<dependency>
-		    <groupId>com.microsoft.sqlserver</groupId>
-		    <artifactId>mssql-jdbc</artifactId>
-		    <version>6.2.0.jre8</version>
-		    <scope>runtime</scope>
-		</dependency>
+
 		<!-- 百度人工智能 -->
 		<dependency>
     		<groupId>com.baidu.aip</groupId>
@@ -125,6 +120,18 @@
 			</exclusions>
 		</dependency>
 	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>aliyun-maven-repo</id>
+			<url>https://maven.aliyun.com/repository/public</url>
+		</repository>
+
+		<repository>
+			<id>central</id>
+			<url>https://repo.maven.apache.org/maven2</url>
+		</repository>
+	</repositories>
 
 	<build>
 		<plugins>
